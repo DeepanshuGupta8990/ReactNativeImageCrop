@@ -8,6 +8,7 @@ const App = () => {
     <ScrollView>
       <View style={{display:'flex',gap:100,padding:30}}>
       <FileUpload/>
+      <ScanDoc/>
       </View>
     </ScrollView>
   )

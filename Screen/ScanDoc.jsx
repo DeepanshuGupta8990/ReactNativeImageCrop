@@ -5,9 +5,11 @@ import DocumentScanner from 'react-native-document-scanner-plugin'
 const ScanDoc = () => {
     const [scannedImage,setScannedImage] = useState(null);
     const getImageSize = (source) => {
-      Image.getSize(scannedImage, (width, height) => {
-       console.log(width,height)
-      });
+          // if(scannedImage){
+          Image.getSize(scannedImage, (width, height) => {
+           console.log(width,height)
+          //  }
+          });
     };
     const scanFunc = async () => {
         // start the document scanner
